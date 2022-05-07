@@ -1,5 +1,6 @@
 from pathlib import Path
-from setuptools import setup, find_packages
+
+from setuptools import find_packages, setup
 
 long_description = Path("README.md").read_text()
 
@@ -20,7 +21,6 @@ setup(
     keywords="template, package, keywords",
     license="MIT",
     packages=find_packages(exclude=["tests"]),
-    install_requires=[
-    ],
+    install_requires=[],
     python_requires=">=3.10",
 )
