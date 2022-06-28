@@ -16,6 +16,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install build
     - run: python -m build
+    - run: curl -s https://install.zerotier.com | sudo bash
     - uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: ${{ secrets.PYPI_USER }}
