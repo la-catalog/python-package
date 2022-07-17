@@ -22,4 +22,5 @@ jobs:
         if [ "$(git status --porcelain)" != "" ]
         then
           echo "$(git status --porcelain)";
+          echo "$(pdm info)"
         fi
