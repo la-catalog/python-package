@@ -19,7 +19,7 @@ jobs:
     - run: pdm run sort
     - run: pdm run tests
     - run: |
-      if [ "$(git status --porcelain)" != "" ]
-      then
-        echo "commit";
-      fi
+        if [ "$(git status --porcelain)" != "" ]
+        then
+          echo "commit";
+        fi
