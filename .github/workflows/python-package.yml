@@ -18,3 +18,9 @@ jobs:
     # - uses: psf/black@stable
     - run: pdm run sort
     - run: pdm run tests
+    - run: |
+      if [ $(git status --porcelain) == "" ] then
+        echo "commit"
+      else
+        echo "not commit"
+      fi
