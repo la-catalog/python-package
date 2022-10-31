@@ -1,5 +1,5 @@
 # python-package
-Description  
+Use esse pacote para...  
 
 # install
 `pdm add python-package`  
